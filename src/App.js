@@ -9,6 +9,7 @@ import Navbar from "./components/navbar";
 import "./App.css";
 import AboutPage from "./pages/aboutPage";
 import AboutDetail from "./pages/aboutdetailPage";
+import PWAPrompt from "./components/pwaPrompt";
 
 function App() {
   const [darkMode, setDarkMode] = useState(() => {
@@ -72,6 +73,7 @@ function App() {
             }
           />
         </Routes>
+        <PWAPrompt />
       </div>
     </Router>
   );
