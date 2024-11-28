@@ -3,6 +3,7 @@ import axios from "axios";
 import Card from "../components/card";
 import Modal from "../components/modal";
 import SearchBar from "../components/searchBar";
+import PWAPrompt from "../components/pwaPrompt";
 
 const dapilList = [
     { id: '3301', name: 'JAWA TENGAH I', description: 'Semarang, Salatiga, Kendal' },
@@ -72,6 +73,7 @@ export default function LandingPage() {
 
     return (
         <div className="min-h-screen bg-gray-50 dark:bg-gray-900 p-4">
+            <PWAPrompt />
             {/* Search Bar */}
             <div className="mb-8">
                 <SearchBar 

@@ -35,6 +35,7 @@ function App() {
             path="/landing" 
             element={
               <div className="min-h-screen dark:bg-gray-900">
+                <PWAPrompt />
                 <Header />
                 <LandingPage />
                 <Navbar darkMode={darkMode} setDarkMode={setDarkMode}/>
@@ -73,7 +74,6 @@ function App() {
             }
           />
         </Routes>
-        <PWAPrompt />
       </div>
     </Router>
   );
