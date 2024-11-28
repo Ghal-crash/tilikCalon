@@ -140,6 +140,21 @@ export default function Navbar({ darkMode, setDarkMode }) {
           </svg>
           <small className="text-xs font-medium">Beranda</small>
         </Link>
+
+        <Link
+          to="/random"
+          className={`flex aspect-square min-h-[32px] w-16 flex-col items-center justify-center gap-1 rounded-md ${
+            location.pathname === '/random'
+              ? 'bg-indigo-50 text-indigo-600 dark:bg-sky-900 dark:text-sky-50'
+              : 'text-gray-700 hover:bg-gray-100 dark:text-gray-400 dark:hover:bg-slate-800'
+          }`}
+          onClick={() => setIsOpen(false)}
+        >
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" className="w-6 h-6">
+            <path strokeLinecap="round" strokeLinejoin="round" d="M7.5 21L3 16.5m0 0L7.5 12M3 16.5h13.5m0-13.5L21 7.5m0 0L16.5 12M21 7.5H7.5" />
+          </svg>
+          <small className="text-center text-xs font-medium">Random</small>
+        </Link>
       </nav>
 
       {/* Overlay */}

@@ -10,6 +10,7 @@ import "./App.css";
 import AboutPage from "./pages/aboutPage";
 import AboutDetail from "./pages/aboutdetailPage";
 import PWAPrompt from "./components/pwaPrompt";
+import RandomPage from "./pages/randomPage";
 
 function App() {
   const [darkMode, setDarkMode] = useState(() => {
@@ -72,6 +73,16 @@ function App() {
                 <Navbar darkMode={darkMode} setDarkMode={setDarkMode}/>
               </div>
             }
+          />
+          <Route
+               path="/random"
+              element={
+                  <div className="min-h-screen dark:bg-gray-900">
+                      <Header />
+                      <RandomPage />
+                      <Navbar darkMode={darkMode} setDarkMode={setDarkMode}/>
+                  </div>
+              }
           />
         </Routes>
       </div>
